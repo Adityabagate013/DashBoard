@@ -1,0 +1,11 @@
+[33m809007c[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/main[m[33m)[m HEAD@{0}: pull origin main (start): checkout 809007c990d026180404ad1d95eebc5276e08fd6
+[33m8c13e65[m[33m ([m[1;32mmain[m[33m)[m HEAD@{1}: commit: working on localStorage.
+[33mfc48ca5[m HEAD@{2}: pull origin main --rebase (finish): returning to refs/heads/main
+[33mfc48ca5[m HEAD@{3}: pull origin main --rebase (pick): setting LocalStorage.
+[33m9323997[m HEAD@{4}: pull origin main --rebase (start): checkout 93239978af6a94a36fea20b68d95cfe9894bff59
+[33m857dd4a[m HEAD@{5}: commit: setting LocalStorage.
+[33m19ddb27[m HEAD@{6}: commit: Pushing code.
+[33m4f8e374[m HEAD@{7}: commit: Adding Code Integration feature.
+[33ma2a710f[m HEAD@{8}: commit: Adding AllTask & CreateTask file.
+[33ma163b18[m HEAD@{9}: commit: make Header & employeeDashboard.
+[33m0020c91[m HEAD@{10}: commit (initial): Initial commit.
