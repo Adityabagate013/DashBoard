@@ -2,7 +2,7 @@
 import './index.css'
 import Login from './component/Auth/Login'
 import AdminDashboard from './component/Dashboard/AdminDashboard'
-import EmployeeDashboard from './component/Dashboard/employeeDashboard'
+import EmployeeDashboard from './component/Dashboard/EmployeeDashboard'
 import { useContext, useEffect, useState } from 'react'
 import { getLocalStorage } from './utils/localStorage'
 import { AuthContext } from './context/AuthProvider'
