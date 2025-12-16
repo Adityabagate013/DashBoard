@@ -42,9 +42,9 @@ function App() {
     // ✅ ADMIN LOGIN (use stored admin if available)
     const storedAdmin = Array.isArray(storageAdmin) ? storageAdmin[0] : storageAdmin
     if (storedAdmin && email === storedAdmin.email && password === storedAdmin.password) {
-      const adminUser = { role: 'admin', email }
+      const adminUser = { role: 'admin', email, name: storedAdmin.name }
       setUser(adminUser)
-      console.log(storedAdmin);
+      console.log(adminUser);
       localStorage.setItem('LoggedInUser', JSON.stringify(adminUser))
       return
     }
