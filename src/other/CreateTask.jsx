@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CreateTask = () => {
+const CreateTask = ({authData}) => {
   return (
     <div className='p-5 bg-[#1c1c1c] mt-5 rounded'>
         <form action="" className='flex flex-wrap w-full items-start justify-between'>

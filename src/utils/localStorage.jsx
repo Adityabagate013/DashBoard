@@ -1,10 +1,17 @@
 import React from "react";
-
+localStorage.clear();
 const employees = [
   {
     id: 1,
+    name: "Rahul Sharma",
     email: "employee1@example.com",
     password: "123",
+    taskCount: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
     tasks: [
       {
         taskId: 101,
@@ -41,14 +48,33 @@ const employees = [
         newTask: false,
         completed: false,
         failed: true
+      },
+      {
+        taskId: 104,
+        title: "Sales Call",
+        description: "Call potential leads",
+        date: "2025-01-14",
+        time: "11:00 AM",
+        category: "Sales",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: false
       }
     ]
   },
 
   {
     id: 2,
+    name: "Priya Verma",
     email: "employee2@example.com",
     password: "123",
+    taskCount: {
+      active: 1,
+      newTask: 1,
+      completed: 2,
+      failed: 0
+    },
     tasks: [
       {
         taskId: 201,
@@ -85,14 +111,33 @@ const employees = [
         newTask: false,
         completed: true,
         failed: false
+      },
+      {
+        taskId: 204,
+        title: "Logo Redesign",
+        description: "Improve brand logo",
+        date: "2025-01-14",
+        time: "04:00 PM",
+        category: "Design",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: false
       }
     ]
   },
 
   {
     id: 3,
+    name: "Amit Patel",
     email: "employee3@example.com",
     password: "123",
+    taskCount: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
     tasks: [
       {
         taskId: 301,
@@ -129,14 +174,33 @@ const employees = [
         newTask: false,
         completed: true,
         failed: false
+      },
+      {
+        taskId: 304,
+        title: "Optimize Queries",
+        description: "Improve database performance",
+        date: "2025-01-14",
+        time: "03:00 PM",
+        category: "Backend",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: false
       }
     ]
   },
 
   {
     id: 4,
+    name: "Neha Singh",
     email: "employee4@example.com",
     password: "123",
+    taskCount: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
     tasks: [
       {
         taskId: 401,
@@ -173,14 +237,33 @@ const employees = [
         newTask: false,
         completed: false,
         failed: true
+      },
+      {
+        taskId: 404,
+        title: "Email Campaign",
+        description: "Launch email marketing campaign",
+        date: "2025-01-14",
+        time: "11:30 AM",
+        category: "Marketing",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: false
       }
     ]
   },
 
   {
     id: 5,
+    name: "Karan Mehta",
     email: "employee5@example.com",
     password: "123",
+    taskCount: {
+      active: 1,
+      newTask: 1,
+      completed: 1,
+      failed: 1
+    },
     tasks: [
       {
         taskId: 501,
@@ -217,18 +300,33 @@ const employees = [
         newTask: false,
         completed: false,
         failed: true
+      },
+      {
+        taskId: 504,
+        title: "User Feedback Review",
+        description: "Analyze customer feedback",
+        date: "2025-01-14",
+        time: "04:00 PM",
+        category: "Support",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: false
       }
     ]
   }
-];
+]
+
 
 const admin = [
   {
     id: 100,
+    name: "John Doe",
     email: "admin@example.com",
     password: "123"
   }
 ];
+
 
 export const setLocalStorage = () => {
   localStorage.setItem('employees', JSON.stringify(employees))
