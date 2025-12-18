@@ -3,8 +3,7 @@ import Header from '../../other/Header'
 import CreateTask from '../../other/CreateTask'
 import AllTask from '../../other/AllTask'
 
-const AdminDashboard = ({adminUser}) => {
-  console.log("dashAdmin data", adminUser={adminUser})
+const AdminDashboard = ()=> {
 
   return (
     <div className='h-screen w-full p-7'>
