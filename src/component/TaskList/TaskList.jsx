@@ -4,27 +4,25 @@ import NewTask from './NewTask'
 import CompleteTask from './CompleteTask'
 import FailedTask from './FailedTask'
 
-const TaskList = ({authData}) => {
-  console.log("authData is ",authData)
+const TaskList = ({data}) => {
+
   return (
     <div id='TaskList' className='h-[55%] overflow-x-auto flex items-center justify-start gap-5 flex-nowrap mt-10 w-full py-5'>
-      {data.taskNumber.map((elem,id)=>{
+      {data.tasks.map((elem)=>{
         if(elem.active){
-          return <AcceptTask key={data.id} />
+          return <AcceptTask  key={elem.taskId} data={elem}/>
         }
         if(elem.NewTask){
-          return <NewTask key={data.id}/>
+          return <NewTask key={elem.taskId} data={elem}/>
         }
         if(elem.completed){
-          return <CompleteTask key={data.id} />
+          return <CompleteTask key={elem.taskId} data={elem} />
         }
         if(elem.failed){
-          return <FailedTask key={data.id} />
+          return <FailedTask key={elem.taskId} data={elem}/>
         }
       })}
-     
-
-    </div>
+        </div>
   )
 }
 
